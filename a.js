@@ -27,17 +27,16 @@ document.addEventListener("DOMContentLoaded", () => {
         var greeting = document.createElement("h1");
         greeting.className = "greeting";
         greeting.innerHTML = "Hello " + userName.value +" <h5> Enter your note here. Think of it as a digital sticky note that won’t peel off your screen 😂</h5>";
-        greetingContainer.innerHTML = ''; // Clear any previous greeting
+        greetingContainer.innerHTML = ''; 
         greetingContainer.appendChild(greeting);
 
-        // Create and append quote element
         var quote = document.createElement("p");
         quote.className = "quote";
         quote.innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
-        cont.insertBefore(quote, cont.firstChild); // Insert quote at the top of cont
+        cont.insertBefore(quote, cont.firstChild); 
     });
 
-    // Event listener for 'Add your task' button
+    
     btn.addEventListener("click", () => {
         var userInput = document.getElementById("user");
 
